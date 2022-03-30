@@ -1,16 +1,45 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.homeLO {
+    @apply grid;
+    @apply grid-cols-6;
+    @apply place-content-center;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.flex-col-center {
+    @apply flex;
+    @apply flex-wrap;
+    @apply flex-col;
+    @apply justify-center;
+    @apply items-center;
 }
 
-* {
-  box-sizing: border-box;
+.flex-row-center {
+    @apply flex;
+    @apply flex-wrap;
+    @apply flex-row;
+    @apply justify-center;
+    @apply items-center;
+}
+
+.line-be {
+    @apply before:block;
+    @apply before:w-20;
+    @apply before:h-1;
+    @apply before:bg-black;
+    @apply before:left-0;
+    @apply before:top-2/4;
+    @apply before:absolute;
+}
+
+.line-af {
+    @apply before:block;
+    @apply before:w-20;
+    @apply before:h-1;
+    @apply before:bg-black;
+    @apply before:right-0;
+    @apply before:top-2/4;
+    @apply before:absolute;
 }
